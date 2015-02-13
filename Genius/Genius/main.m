@@ -15,10 +15,12 @@ int main(int argc, const char * argv[]) {
       
     Fila *t = [[Fila alloc]init];
         
-      for (int i=0; i<=7; i++) {
-            NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
-      }
-    
+        Fila *t = [[Fila alloc]init];
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        
         
     }
     return 0;

@@ -55,6 +55,10 @@
 			children = (
 				DDCE893C1A8E5805007515D9 /* Username.h */,
 				DDCE893D1A8E5805007515D9 /* Username.m */,
+				EC02428D1A8E5AE60074F1CF /* Placar.h */,
+				EC02428E1A8E5AE60074F1CF /* Placar.m */,
+				EC02428A1A8E5A070074F1CF /* Controller.h */,
+				EC02428B1A8E5A070074F1CF /* Controller.m */,
 				EC0242841A8E29DE0074F1CF /* Fila.h */,
 				EC0242851A8E29DE0074F1CF /* Fila.m */,
 				EC02427C1A8E29CF0074F1CF /* Genius */,
@@ -137,6 +141,8 @@
 				EC02427E1A8E29CF0074F1CF /* main.m in Sources */,
 				EC0242861A8E29DE0074F1CF /* Fila.m in Sources */,
 				DDCE893E1A8E5805007515D9 /* Username.m in Sources */,
+				EC02428F1A8E5AE60074F1CF /* Placar.m in Sources */,
+				EC02428C1A8E5A070074F1CF /* Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
