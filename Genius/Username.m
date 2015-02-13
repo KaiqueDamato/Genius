@@ -11,8 +11,7 @@
 
 @implementation Username
 
--(instancetype)initWithNome:(NSString *)nome;
-{
+-(instancetype)initWithNome:(NSString *)nome {
     
     self = [super init];
     if (self) {
@@ -23,11 +22,15 @@
     }
     return self;
 }
-- (NSString *)description
-{
+
+- (NSString *)description {
     NSString *mydescription;
-    return mydescription = [NSString stringWithFormat:@"nome :%@\n pontuacao: %lu\n vezes : %lu",_nome, _pontuacao, _vezes];
+    return mydescription = [NSString stringWithFormat:@"Nome: %@ \n Pontuacao: %lu \n Vezes: %lu",_nome, _pontuacao, _vezes];
 }
 
+- (NSString *)description2 {
+    NSString *mydescription;
+    return mydescription = [NSString stringWithFormat:@"Nome: %@",_nome];
+}
 
 @end
