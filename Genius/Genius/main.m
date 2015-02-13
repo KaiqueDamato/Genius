@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "teste.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        teste *t = [[teste alloc]init];
+    NSLog(@"%li", [t randomNumberBetween:1 maxNumber:2]);
         
     }
     return 0;

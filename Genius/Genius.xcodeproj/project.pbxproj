@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC02427E1A8E29CF0074F1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02427D1A8E29CF0074F1CF /* main.m */; };
-		EC0242861A8E29DE0074F1CF /* teste.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0242851A8E29DE0074F1CF /* teste.m */; };
+		EC0242861A8E29DE0074F1CF /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0242851A8E29DE0074F1CF /* Fila.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		EC02427A1A8E29CF0074F1CF /* Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Genius; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC02427D1A8E29CF0074F1CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EC0242841A8E29DE0074F1CF /* teste.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = teste.h; sourceTree = "<group>"; };
-		EC0242851A8E29DE0074F1CF /* teste.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = teste.m; sourceTree = "<group>"; };
+		EC0242841A8E29DE0074F1CF /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
+		EC0242851A8E29DE0074F1CF /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,8 +44,8 @@
 		EC0242711A8E29CF0074F1CF = {
 			isa = PBXGroup;
 			children = (
-				EC0242841A8E29DE0074F1CF /* teste.h */,
-				EC0242851A8E29DE0074F1CF /* teste.m */,
+				EC0242841A8E29DE0074F1CF /* Fila.h */,
+				EC0242851A8E29DE0074F1CF /* Fila.m */,
 				EC02427C1A8E29CF0074F1CF /* Genius */,
 				EC02427B1A8E29CF0074F1CF /* Products */,
 			);
@@ -124,7 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC02427E1A8E29CF0074F1CF /* main.m in Sources */,
-				EC0242861A8E29DE0074F1CF /* teste.m in Sources */,
+				EC0242861A8E29DE0074F1CF /* Fila.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +238,7 @@
 				EC0242831A8E29CF0074F1CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface teste : NSObject
+@interface Fila : NSObject
 
-@property int teste;
+- (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max;
 
 @end
