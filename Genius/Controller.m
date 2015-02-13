@@ -52,8 +52,7 @@
             NSString* nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
             Username *u = [[Username alloc]initWithNome:nome];
             [p addUsuario:u];
-            [p exibeInformacoes];
-            [self jogar];
+            [self jogar:u];
             break;
         }
             
@@ -63,10 +62,13 @@
             printf("Digite seu nome de usuário: ");
             scanf("%s",a);
             nome = [[NSString stringWithCString:a encoding:NSUTF8StringEncoding]uppercaseString];
-            for (NSString *string in p.placar) {
-                if ([nome isEqual:string]) {
-                    [self jogar];
+
+            for (Username *user in p.placar) {
+                if ([nome isEqual:user.nome]) {
+                    [self jogar:user];
                 }else {
+                    NSLog(@"Jogador nāo encontrado.\nO nome deve ser o mesmo que você usou anteriormente.");
+                    [self iniciar];
                     break;
                 }
             }
@@ -80,25 +82,29 @@
     }
 }
 
--(void) jogar {
+-(void) jogar:(Username *)u  {
     Fila *f = [[Fila alloc] init];
     BOOL acerto = YES;
     
     while (acerto) {
         [f inserirArrayPergunta];
         [f exibir];
+        NSLog(@"\nDigite a sequencia apresentada, um numero por vez (aperte enter apos escrever um numero):");
         int a;
-//        NSLog(@"\nDigite a sequencia apresentada, um numero por vez:");
-//        for (int i=0; i<[; <#increment#>) {
-//            <#statements#>
-//        }
-//        scanf("%d", &a);
-//        NSString* resposta = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
-//        [f inserirArrayResposta:resposta];
-        
-        
+        for (int i=0; i<[f.arrayPergunta count]; i++) {
+            scanf("%d",&a);
+            [f inserirArrayResposta:(NSInteger)a];
+        }
+        acerto = [f compararArrays];
+        if (acerto) {
+            NSLog(@"Sequencia correta!\n\n\n\n\n");
+            sleep(1);
+        }
     }
-    
+    NSLog(@"Você errou a seuqencia! :(\nSua pontuaçāo foi salva.");
+    u.pontuacao = [f.arrayResposta count];
+    u.vezes = u.vezes+1;
+    [self iniciar];
 }
 
 @end
