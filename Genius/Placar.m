@@ -18,4 +18,8 @@
     return self;
 }
 
+- (void)addUsuario:(id)usuario {
+    [_placar addObject:usuario];
+}
+
 @end
