@@ -15,6 +15,7 @@
     if(self) {
         _placar = [[NSMutableArray alloc] init];
     }
+    return self;
 }
 
 @end
