@@ -41,7 +41,7 @@
 
 -(BOOL)compararArrays{
     
-    if (_arrayPergunta == _arrayResposta)
+    if ([_arrayPergunta isEqual:_arrayResposta])
         return true;
     else
         return false;
