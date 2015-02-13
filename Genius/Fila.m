@@ -41,7 +41,7 @@
 
 -(BOOL)compararArrays:(NSUInteger)i {
     
-    if (_arrayPergunta[i] == _arrayResposta[i])
+    if (_arrayPergunta == _arrayResposta)
         return true;
     else
         return false;
