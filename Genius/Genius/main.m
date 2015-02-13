@@ -9,17 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "Fila.h"
 #import <stdlib.h>
+#import "Controller.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
       
-    Fila *t = [[Fila alloc]init];
+        Controller *c = [[Controller alloc] init];
         
-        Fila *t = [[Fila alloc]init];
-        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
-        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
-        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
-        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        [c iniciar];
         
         
     }
