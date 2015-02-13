@@ -88,12 +88,14 @@
         [f inserirArrayPergunta];
         [f exibir];
         int a;
-        NSLog(@"\nDigite a sequencia apresentada, um numero por vez:");
-        scanf("%d", &a);
-        NSString* resposta = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
-        [f inserirArrayResposta:resposta];
+//        NSLog(@"\nDigite a sequencia apresentada, um numero por vez:");
+//        for (int i=0; i<[; <#increment#>) {
+//            <#statements#>
+//        }
+//        scanf("%d", &a);
+//        NSString* resposta = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+//        [f inserirArrayResposta:resposta];
         
-        }
         
     }
     
