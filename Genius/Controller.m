@@ -7,7 +7,6 @@
 //
 
 #import "Controller.h"
-#import "Placar.h"
 
 
 @implementation Controller
@@ -67,12 +66,14 @@
             for (Username *user in p.placar) {
                 if ([nome isEqual:user.nome]) {
                     [self jogar:user];
-                }else {
-                    NSLog(@"Jogador nāo encontrado.\nO nome deve ser o mesmo que você usou anteriormente.");
-                    [self iniciar];
                     break;
                 }
+                
             }
+            NSLog(@"Jogador nāo encontrado.\nO nome deve ser o mesmo que você usou anteriormente.");
+            [self iniciar];
+            break;
+            
         }
             
         default:
@@ -102,7 +103,7 @@
             sleep(1);
         }
     }
-    NSLog(@"Você errou a seuqencia! :(\nSua pontuaçāo foi salva.");
+    NSLog(@"Você errou a sequencia! :(\nSua pontuaçāo foi salva.");
     u.pontuacao = [f.arrayResposta count];
     u.vezes = u.vezes+1;
     [self iniciar];

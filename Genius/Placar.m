@@ -9,7 +9,20 @@
 #import "Placar.h"
 #import "Username.h"
 
+@interface Placar()
+
+@end
+
 @implementation Placar
+
++ (instancetype)sharedInstance {
+    static dispatch_once_t onceToken = 0;
+    __strong static Placar *instance = nil;
+    dispatch_once(&onceToken,^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
 
 - (instancetype)init {
     self = [super init];

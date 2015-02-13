@@ -27,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17C0EB5F1A8E9045000CB72F /* PrimeiroSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrimeiroSingleton.h; sourceTree = "<group>"; };
+		17C0EB601A8E9045000CB72F /* PrimeiroSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrimeiroSingleton.m; sourceTree = "<group>"; };
 		DDCE893C1A8E5805007515D9 /* Username.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Username.h; sourceTree = "<group>"; };
 		DDCE893D1A8E5805007515D9 /* Username.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Username.m; sourceTree = "<group>"; };
 		EC02427A1A8E29CF0074F1CF /* Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Genius; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +55,8 @@
 		EC0242711A8E29CF0074F1CF = {
 			isa = PBXGroup;
 			children = (
+				17C0EB5F1A8E9045000CB72F /* PrimeiroSingleton.h */,
+				17C0EB601A8E9045000CB72F /* PrimeiroSingleton.m */,
 				DDCE893C1A8E5805007515D9 /* Username.h */,
 				DDCE893D1A8E5805007515D9 /* Username.m */,
 				EC02428D1A8E5AE60074F1CF /* Placar.h */,
