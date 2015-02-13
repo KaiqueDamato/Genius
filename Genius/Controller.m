@@ -100,6 +100,7 @@
         if (acerto) {
             NSLog(@"Sequencia correta!\n\n\n\n\n");
             sleep(1);
+            [f.arrayResposta removeAllObjects];
         }
     }
     NSLog(@"Você errou a seuqencia! :(\nSua pontuaçāo foi salva.");
