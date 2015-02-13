@@ -16,9 +16,10 @@
 
 - (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max;
 
--(void)inserirArrayPergunta:(NSInteger)random;
+-(void)inserirArrayPergunta;
 -(void)inserirArrayResposta:(NSInteger)resposta;
 -(BOOL)compararArrays;
 -(void)limparArrays;
+-(void)exibir;
 
 @end

@@ -61,8 +61,22 @@
 }
 
 -(void) jogar {
+    Fila *f = [[Fila alloc] init];
+    BOOL acerto = YES;
+    
+    while (acerto) {
+        [f inserirArrayPergunta];
+        [f exibir];
+        int a;
+        NSLog(@"\nDigite a sequencia apresentada, um numero por vez:");
+        scanf("%d", &a);
+        NSString* resposta = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+        [f inserirArrayResposta:resposta];
+        
+        }
+        
+    }
     
 }
-
 
 @end

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Placar.h"
 #import "Username.h"
+#import "Fila.h"
 
 @interface Controller : NSObject
 

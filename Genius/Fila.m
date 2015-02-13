@@ -26,8 +26,9 @@
     return min + arc4random_uniform(max - min + 1.0);
 }
 
--(void)inserirArrayPergunta:(NSInteger)random {
+-(void)inserirArrayPergunta {
     
+    NSInteger random = [self randomNumberBetween:1 maxNumber:4];
     
     [_arrayPergunta addObject:[NSNumber numberWithInteger:random]];
     
