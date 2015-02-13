@@ -10,12 +10,14 @@
 #import "Fila.h"
 #import <stdlib.h>
 #import "Username.h"
+#import "Controller.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
       
         Controller *c = [[Controller alloc] init];
         
+        [c iniciar];
         NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
         NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
         NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
