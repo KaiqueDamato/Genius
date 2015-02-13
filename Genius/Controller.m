@@ -62,12 +62,14 @@
             char a[50];
             printf("Digite seu nome de usuário: ");
             scanf("%s",a);
-            nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
-            for (NSString *string in placar) {
-                <#statements#>
+            nome = [[NSString stringWithCString:a encoding:NSUTF8StringEncoding]uppercaseString];
+            for (NSString *string in p.placar) {
+                if ([nome isEqual:string]) {
+                    [self jogar];
+                }else {
+                    break;
+                }
             }
-            [self jogar];
-            break;
         }
             
         default:
