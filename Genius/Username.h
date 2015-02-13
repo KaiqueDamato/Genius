@@ -11,7 +11,7 @@
 @interface Username : NSObject
 
 
-@property   NSString *nome;
+@property NSString *nome;
 @property NSInteger  pontuacao;
 @property NSInteger vezes;
 

@@ -23,7 +23,7 @@
     [_placar addObject:usuario];
 }
 
-- (void)exibeInformaçoes {
+- (void)exibeInformacoes {
     for (Username *username in _placar) {
         NSLog(@"%@", [username description]);
     }
