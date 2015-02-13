@@ -50,7 +50,8 @@
             scanf("%s", a);
             
             NSString* nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
-            Username *u = [[Username alloc]initWithNome:nome];
+            
+            Username *u = [[Username alloc]initWithNome:[nome uppercaseString]];
             [p addUsuario:u];
             [p exibeInformacoes];
             [self jogar];

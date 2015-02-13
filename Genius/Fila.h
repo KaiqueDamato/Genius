@@ -20,5 +20,5 @@
 -(void)inserirArrayResposta:(NSInteger)resposta;
 -(BOOL)compararArrays;
 -(void)limparArrays;
-
+-(void)exibir;
 @end

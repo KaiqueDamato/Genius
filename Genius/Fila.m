@@ -54,4 +54,22 @@
     
 }
 
+-(void)exibir {
+    for (NSUInteger i = 0; i < [_arrayPergunta count];i++) {
+        [self clearLogs];
+        NSLog(@"%@", _arrayPergunta[i]);
+        sleep(2);
+    }
+}
+
+-(void)clearLogs {
+    char saida[100];
+    int i;
+    for (i = 1; i< 300; i++) {
+        saida[i]='\n';
+    }
+    saida[i]='\0';
+    printf("%s", saida);
+}
+
 @end
