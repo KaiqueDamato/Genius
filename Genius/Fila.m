@@ -11,9 +11,47 @@
 
 @implementation Fila
 
-- (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max
-{
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _arrayPergunta = [[NSMutableArray alloc] init];
+        _arrayResposta = [[NSMutableArray alloc] init];
+    }
+    return self;
+}
+
+
+- (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max {
+    
     return min + arc4random_uniform(max - min + 1.0);
+}
+
+-(void)inserirArrayPergunta:(NSInteger)random {
+    
+    
+    [_arrayPergunta addObject:[NSNumber numberWithInteger:random]];
+    
+}
+
+-(void)inserirArrayResposta:(NSInteger)resposta {
+    
+    [_arrayResposta addObject:[NSNumber numberWithInteger:resposta]];
+    
+}
+
+-(BOOL)compararArrays:(NSUInteger)i {
+    
+    if (_arrayPergunta[i] == _arrayResposta[i])
+        return true;
+    else
+        return false;
+}
+
+-(void)limparArrays {
+    
+    [_arrayPergunta removeAllObjects];
+    [_arrayResposta removeAllObjects];
+    
 }
 
 @end
