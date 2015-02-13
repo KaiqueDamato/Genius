@@ -23,7 +23,11 @@
     }
     return self;
 }
-
+- (NSString *)description
+{
+    NSString *mydescription;
+    return mydescription = [NSString stringWithFormat:@"nome :%@\n pontuacao: %lu\n vezes : %lu",_nome, _pontuacao, _vezes];
+}
 
 
 @end
