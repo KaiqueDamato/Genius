@@ -13,7 +13,7 @@
 
 @property NSMutableArray *placar;
 
-- (instancetype)init;
++ (instancetype)sharedInstance;
 - (void)addUsuario:(Username *)usuario;
 - (void)exibeInformacoes;
 
