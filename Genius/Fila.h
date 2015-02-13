@@ -18,7 +18,7 @@
 
 -(void)inserirArrayPergunta:(NSInteger)random;
 -(void)inserirArrayResposta:(NSInteger)resposta;
--(void)compararArrays:(NSUInteger)i;
+-(BOOL)compararArrays:(NSUInteger)i;
 -(void)limparArrays;
 
 @end

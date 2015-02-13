@@ -8,15 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "Fila.h"
-#include <stdlib.h>
+#import <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-    Fila *t = [[Fila alloc]init];
-    NSLog(@"%li", [t randomNumberBetween:1 maxNumber:2]);
+        Fila *t = [[Fila alloc]init];
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
         
-    system( "clear" );
         
     }
     return 0;
