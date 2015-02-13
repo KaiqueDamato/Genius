@@ -10,6 +10,15 @@
 
 @interface Fila : NSObject
 
+@property NSMutableArray *arrayPergunta;
+
+@property NSMutableArray *arrayResposta;
+
 - (NSInteger)randomNumberBetween:(NSInteger)min maxNumber:(NSInteger)max;
+
+-(void)inserirArrayPergunta:(NSInteger)random;
+-(void)inserirArrayResposta:(NSInteger)resposta;
+-(BOOL)compararArrays:(NSUInteger)i;
+-(void)limparArrays;
 
 @end
