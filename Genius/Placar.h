@@ -15,5 +15,6 @@
 
 - (instancetype)init;
 - (void)addUsuario:(Username *)usuario;
+- (void)exibeInformacoes;
 
 @end
