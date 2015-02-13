@@ -11,12 +11,12 @@
 
 @implementation Username
 
--(instancetype)initWithNome:(NSString *)n;
+-(instancetype)initWithNome:(NSString *)nome;
 {
     
     self = [super init];
     if (self) {
-        _nome = n;
+        _nome = nome;
         _pontuacao = 0;
         _vezes =0;
         

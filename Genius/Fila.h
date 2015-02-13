@@ -1,5 +1,5 @@
 //
-//  teste.h
+//  Fila.h
 //  Genius
 //
 //  Created by Kaique Damato on 13/02/15.
@@ -18,7 +18,7 @@
 
 -(void)inserirArrayPergunta:(NSInteger)random;
 -(void)inserirArrayResposta:(NSInteger)resposta;
--(BOOL)compararArrays:(NSUInteger)i;
+-(BOOL)compararArrays;
 -(void)limparArrays;
 
 @end
