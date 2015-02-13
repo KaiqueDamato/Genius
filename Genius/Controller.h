@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Placar.h"
+#import "Username.h"
 
 @interface Controller : NSObject
 
 - (BOOL)iniciar;
+
 
 @end
