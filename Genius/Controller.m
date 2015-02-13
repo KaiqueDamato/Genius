@@ -58,11 +58,20 @@
             break;
         }
             
-        case 1:
-            //exibe lista de usuarios para escolha
-            [self jogar];
-            break;
-        
+        case 1: {
+            NSString *nome;
+            char a[50];
+            printf("Digite seu nome de usuário: ");
+            scanf("%s",a);
+            nome = [[NSString stringWithCString:a encoding:NSUTF8StringEncoding]uppercaseString];
+            for (NSString *string in p.placar) {
+                if ([nome isEqual:string]) {
+                    [self jogar];
+                }else {
+                    break;
+                }
+            }
+        }
             
         default:
             NSLog(@"Opçāo Inválida");
@@ -73,8 +82,24 @@
 }
 
 -(void) jogar {
+    Fila *f = [[Fila alloc] init];
+    BOOL acerto = YES;
+    
+    while (acerto) {
+        [f inserirArrayPergunta];
+        [f exibir];
+        int a;
+//        NSLog(@"\nDigite a sequencia apresentada, um numero por vez:");
+//        for (int i=0; i<[; <#increment#>) {
+//            <#statements#>
+//        }
+//        scanf("%d", &a);
+//        NSString* resposta = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+//        [f inserirArrayResposta:resposta];
+        
+        
+    }
     
 }
-
 
 @end

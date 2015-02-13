@@ -11,12 +11,9 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-      
         Controller *c = [[Controller alloc] init];
         
         [c iniciar];
-        
-        
     }
     return 0;
 }
