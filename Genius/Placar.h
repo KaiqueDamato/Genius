@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Username.h"
 
 @interface Placar : NSObject
 
 @property NSMutableArray *placar;
 
 - (instancetype)init;
+- (void)addUsuario:(Username *)usuario;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "Placar.h"
+#import "Username.h"
 
 @implementation Placar
 
@@ -17,5 +18,16 @@
     }
     return self;
 }
+
+- (void)addUsuario:(id)usuario {
+    [_placar addObject:usuario];
+}
+
+- (void)exibeInformaçoes {
+    for (Username *username in _placar) {
+        NSLog(@"%@", username);
+    }
+}
+
 
 @end

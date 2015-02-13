@@ -15,5 +15,5 @@
 @property NSInteger  pontuacao;
 @property NSInteger vezes;
 
--(instancetype)initWithNome: (NSString *)n;
+-(instancetype)initWithNome: (NSString *)nome;
 @end
