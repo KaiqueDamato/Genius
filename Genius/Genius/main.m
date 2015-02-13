@@ -15,7 +15,6 @@ int main(int argc, const char * argv[]) {
       
     Fila *t = [[Fila alloc]init];
         
-        Fila *t = [[Fila alloc]init];
         NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
         NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
         NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
