@@ -64,7 +64,7 @@
 }
 
 -(void)clearLogs {
-    char saida[100];
+    char saida[1000];
     int i;
     for (i = 1; i < 300; i++) {
         saida[i]='\n';
