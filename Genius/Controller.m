@@ -17,7 +17,7 @@
     int escolha1;
     scanf("%d",&escolha1);
     
-    Placar *placar = [[Placar alloc] init];
+    Placar *placar = [Placar sharedInstance];
     
     switch (escolha1) {
         case 0:
@@ -37,7 +37,7 @@
 }
 
 -(void) menu2 {
-    Placar *p = [[Placar alloc]init];
+    Placar *p = [Placar sharedInstance];
     NSLog(@"\n0 - Novo Jogador \n1 - Já estou cadastrado!");
     int escolha2;
     scanf("%d",&escolha2);
@@ -105,7 +105,9 @@
         }
     }
     NSLog(@"Você errou a sequencia! :(\nSua pontuaçāo foi salva.");
-    u.pontuacao = [f.arrayResposta count];
+    if (u.pontuacao <= [f.arrayResposta count]) {
+        u.pontuacao = [f.arrayResposta count];
+    }
     u.vezes = u.vezes+1;
     [self iniciar];
 }
