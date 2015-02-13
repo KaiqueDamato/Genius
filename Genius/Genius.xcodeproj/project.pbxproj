@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDCE893E1A8E5805007515D9 /* Username.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE893D1A8E5805007515D9 /* Username.m */; };
+		DDCE89411A8E5940007515D9 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE89401A8E5940007515D9 /* Controller.m */; };
 		EC02427E1A8E29CF0074F1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02427D1A8E29CF0074F1CF /* main.m */; };
 		EC0242861A8E29DE0074F1CF /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0242851A8E29DE0074F1CF /* Fila.m */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DDCE893C1A8E5805007515D9 /* Username.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Username.h; sourceTree = "<group>"; };
+		DDCE893D1A8E5805007515D9 /* Username.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Username.m; sourceTree = "<group>"; };
+		DDCE893F1A8E5940007515D9 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		DDCE89401A8E5940007515D9 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		EC02427A1A8E29CF0074F1CF /* Genius */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Genius; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC02427D1A8E29CF0074F1CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC0242841A8E29DE0074F1CF /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
@@ -44,6 +50,10 @@
 		EC0242711A8E29CF0074F1CF = {
 			isa = PBXGroup;
 			children = (
+				DDCE893F1A8E5940007515D9 /* Controller.h */,
+				DDCE89401A8E5940007515D9 /* Controller.m */,
+				DDCE893C1A8E5805007515D9 /* Username.h */,
+				DDCE893D1A8E5805007515D9 /* Username.m */,
 				EC0242841A8E29DE0074F1CF /* Fila.h */,
 				EC0242851A8E29DE0074F1CF /* Fila.m */,
 				EC02427C1A8E29CF0074F1CF /* Genius */,
@@ -125,6 +135,8 @@
 			files = (
 				EC02427E1A8E29CF0074F1CF /* main.m in Sources */,
 				EC0242861A8E29DE0074F1CF /* Fila.m in Sources */,
+				DDCE893E1A8E5805007515D9 /* Username.m in Sources */,
+				DDCE89411A8E5940007515D9 /* Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
