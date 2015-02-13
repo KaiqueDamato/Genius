@@ -7,6 +7,7 @@
 //
 
 #import "Controller.h"
+#import "Placar.h"
 
 
 @implementation Controller
@@ -37,16 +38,24 @@
 }
 
 -(void) menu2 {
+    Placar *p = [[Placar alloc]init];
     NSLog(@"\n0 - Novo Jogador \n1 - Já estou cadastrado!");
     int escolha2;
     scanf("%d",&escolha2);
     
-    
     switch (escolha2) {
-        case 0:
-            //cria novo usuario e adiciona no placar
+        case 0: {
+            char a[50];
+            printf("Digite seu nome: ");
+            scanf("%s", a);
+            
+            NSString* nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+            Username *u = [[Username alloc]initWithNome:nome];
+            [p addUsuario:u];
+            [p exibeInformacoes];
             [self jogar];
             break;
+        }
             
         case 1: {
             NSString *nome;
@@ -65,6 +74,7 @@
             NSLog(@"Opçāo Inválida");
             [self iniciar];
             break;
+        
     }
 }
 
