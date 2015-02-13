@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Fila.h"
+#import <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

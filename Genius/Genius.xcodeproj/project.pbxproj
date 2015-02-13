@@ -10,6 +10,8 @@
 		DDCE893E1A8E5805007515D9 /* Username.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCE893D1A8E5805007515D9 /* Username.m */; };
 		EC02427E1A8E29CF0074F1CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02427D1A8E29CF0074F1CF /* main.m */; };
 		EC0242861A8E29DE0074F1CF /* Fila.m in Sources */ = {isa = PBXBuildFile; fileRef = EC0242851A8E29DE0074F1CF /* Fila.m */; };
+		EC02428C1A8E5A070074F1CF /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02428B1A8E5A070074F1CF /* Controller.m */; };
+		EC02428F1A8E5AE60074F1CF /* Placar.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02428E1A8E5AE60074F1CF /* Placar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		EC02427D1A8E29CF0074F1CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EC0242841A8E29DE0074F1CF /* Fila.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fila.h; sourceTree = "<group>"; };
 		EC0242851A8E29DE0074F1CF /* Fila.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fila.m; sourceTree = "<group>"; };
+		EC02428A1A8E5A070074F1CF /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		EC02428B1A8E5A070074F1CF /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		EC02428D1A8E5AE60074F1CF /* Placar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Placar.h; sourceTree = "<group>"; };
+		EC02428E1A8E5AE60074F1CF /* Placar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Placar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
