@@ -1,5 +1,5 @@
 //
-//  teste.m
+//  Fila.m
 //  Genius
 //
 //  Created by Kaique Damato on 13/02/15.
@@ -39,9 +39,9 @@
     
 }
 
--(BOOL)compararArrays:(NSUInteger)i {
+-(BOOL)compararArrays{
     
-    if (_arrayPergunta[i] == _arrayResposta[i])
+    if ([_arrayPergunta isEqual:_arrayResposta])
         return true;
     else
         return false;
