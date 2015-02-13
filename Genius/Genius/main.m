@@ -15,8 +15,18 @@ int main(int argc, const char * argv[]) {
         Controller *c = [[Controller alloc] init];
         
         [c iniciar];
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
+        NSLog(@"%li", [t randomNumberBetween:1 maxNumber:4]);
         
+        char a[50];
+        printf("digite seu nome: ");
+        scanf("%s", a);
         
+        NSString* nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+        Username *u = [[Username alloc]initWithNome:nome];
+        NSLog(@"%@",u);
     }
     return 0;
 }
