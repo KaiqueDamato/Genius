@@ -43,9 +43,9 @@
 -(BOOL)compararArrays{
     
     if ([_arrayPergunta isEqual:_arrayResposta])
-        return true;
+        return YES;
     else
-        return false;
+        return NO;
 }
 
 -(void)limparArrays {
