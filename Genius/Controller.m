@@ -48,10 +48,18 @@
             [self jogar];
             break;
             
-        case 1:
-            //exibe lista de usuarios para escolha
+        case 1: {
+            NSString *nome;
+            char a[50];
+            printf("Digite seu nome de usuário: ");
+            scanf("%s",a);
+            nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
+            for (NSString *string in placar) {
+                <#statements#>
+            }
             [self jogar];
             break;
+        }
             
         default:
             NSLog(@"Opçāo Inválida");
