@@ -10,4 +10,6 @@
 
 @interface teste : NSObject
 
+@property int teste;
+
 @end
