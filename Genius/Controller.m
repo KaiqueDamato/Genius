@@ -12,17 +12,17 @@
 
 @implementation Controller
 
-- (BOOL)iniciar{
+- (void)iniciar{
     
     NSLog(@"\n0 - Mostrar Placar\n1 - Iniciar Jogo");
     int escolha1;
     scanf("%d",&escolha1);
     
-    //Placar *p = [[Placar alloc] init];
+    Placar *placar = [[Placar alloc] init];
     
     switch (escolha1) {
         case 0:
-            // [p exibeInformacoes];
+            [placar exibeInformacoes];
             [self iniciar];
             break;
             
@@ -35,8 +35,6 @@
             [self iniciar];
             break;
     }
-    
-    return true;
 }
 
 -(void) menu2 {
@@ -76,5 +74,6 @@
 -(void) jogar {
     
 }
+
 
 @end

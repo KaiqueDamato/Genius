@@ -12,7 +12,7 @@
 
 @interface Controller : NSObject
 
-- (BOOL)iniciar;
+- (void)iniciar;
 
 
 @end

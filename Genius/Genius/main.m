@@ -7,9 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Fila.h"
-#import <stdlib.h>
-#import "Username.h"
 #import "Controller.h"
 
 int main(int argc, const char * argv[]) {

@@ -25,7 +25,7 @@
 
 - (void)exibeInformacoes {
     for (Username *username in _placar) {
-        NSLog(@"%@", username);
+        NSLog(@"%@", [username description]);
     }
 }
 
