@@ -17,7 +17,7 @@
     int escolha1;
     scanf("%d",&escolha1);
     
-    Placar *placar = [[Placar alloc] init];
+    Placar *placar = [Placar sharedInstance];
     
     switch (escolha1) {
         case 0:
@@ -37,7 +37,7 @@
 }
 
 -(void) menu2 {
-    Placar *p = [[Placar alloc]init];
+    Placar *p = [Placar sharedInstance];
     NSLog(@"\n0 - Novo Jogador \n1 - Já estou cadastrado!");
     int escolha2;
     scanf("%d",&escolha2);
@@ -59,7 +59,7 @@
         case 1: {
             NSString *nome;
             char a[50];
-            printf("Digite seu nome de usuário: ");
+            printf("Digite o nome do jogador: ");
             scanf("%s",a);
             nome = [[NSString stringWithCString:a encoding:NSUTF8StringEncoding]uppercaseString];
 
@@ -88,10 +88,14 @@
     Fila *f = [[Fila alloc] init];
     BOOL acerto = YES;
     
+    //instruções
+    NSLog(@"\n----- Instruções: -----\nMemorize a sequência de números exibida. A cada acerto a sequência ficará maior!");
+    sleep(4);
+    
     while (acerto) {
         [f inserirArrayPergunta];
         [f exibir];
-        NSLog(@"\nDigite a sequencia apresentada, um numero por vez (aperte enter apos escrever um numero):");
+        NSLog(@"\nDigite a sequência apresentada, um número por vez (aperte enter após escrever um número):");
         int a;
         for (int i=0; i<[f.arrayPergunta count]; i++) {
             scanf("%d",&a);
@@ -99,13 +103,15 @@
         }
         acerto = [f compararArrays];
         if (acerto) {
-            NSLog(@"Sequencia correta!\n\n\n\n\n");
+            NSLog(@"Sequência correta!\n\n\n\n\n");
             sleep(1);
             [f.arrayResposta removeAllObjects];
         }
     }
-    NSLog(@"Você errou a sequencia! :(\nSua pontuaçāo foi salva.");
-    u.pontuacao = [f.arrayResposta count];
+    NSLog(@"Você errou a sequência! :(\nSua pontuaçāo foi salva.\n\n\n\n");
+    if (u.pontuacao <= [f.arrayResposta count] - 1) {
+        u.pontuacao = [f.arrayResposta count] - 1;
+    }
     u.vezes = u.vezes+1;
     [self iniciar];
 }

@@ -58,8 +58,9 @@
 -(void)exibir {
     for (NSUInteger i = 0; i < [_arrayPergunta count];i++) {
         [self clearLogs];
-        NSLog(@"%@", _arrayPergunta[i]);
+        NSLog(@"%luº número:  %@", (unsigned long)i+1, _arrayPergunta[i]);
         sleep(2);
+        [self clearLogs];
     }
 }
 

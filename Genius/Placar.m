@@ -37,8 +37,13 @@
 }
 
 - (void)exibeInformacoes {
-    for (Username *username in _placar) {
-        NSLog(@"%@", username);
+    if ([_placar count] == 0) {
+        NSLog(@"Placar está vazio!");
+    }
+    else {
+        for (Username *username in _placar) {
+            NSLog(@"%@", username);
+        }
     }
 }
 
