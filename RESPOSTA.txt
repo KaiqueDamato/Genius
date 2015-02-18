@@ -1,0 +1,6 @@
+Justificativa do uso da estrutura de dados escolhida:
+
+Usamos NSMutableArray, pois essa classe possui uma grande quantidade de métodos já implementados e que seriam de
+grande serventia pra esse desafio. De acordo com a nossa implementação, simulamos uma fila através dos mutableArrays
+utilizando um método chamado addObject que insere os elementos em fila, depois percorremos essa fila formada com um
+for, para podermos conferir se a sequência digitada pelo usuário era a mesma pedida pelo jogo.
