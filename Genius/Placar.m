@@ -7,7 +7,7 @@
 //
 
 #import "Placar.h"
-#import "Username.h"
+#import "Usuario.h"
 
 @interface Placar()
 
@@ -41,7 +41,7 @@
         NSLog(@"Placar está vazio!");
     }
     else {
-        for (Username *username in _placar) {
+        for (Usuario *username in _placar) {
             NSLog(@"%@", username);
         }
     }

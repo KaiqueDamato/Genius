@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Username : NSObject
+@interface Usuario : NSObject
 
 
 @property NSString *nome;

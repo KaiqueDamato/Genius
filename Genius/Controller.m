@@ -50,7 +50,7 @@
             
             NSString* nome = [NSString stringWithCString:a encoding:NSUTF8StringEncoding];
             
-            Username *u = [[Username alloc]initWithNome:[nome uppercaseString]];
+            Usuario *u = [[Usuario alloc]initWithNome:[nome uppercaseString]];
             [p addUsuario:u];
             [self jogar:u];
             break;
@@ -63,7 +63,7 @@
             scanf("%s",a);
             nome = [[NSString stringWithCString:a encoding:NSUTF8StringEncoding]uppercaseString];
 
-            for (Username *user in p.placar) {
+            for (Usuario *user in p.placar) {
                 if ([nome isEqual:user.nome]) {
                     [self jogar:user];
                     break;
@@ -84,7 +84,7 @@
     }
 }
 
--(void) jogar:(Username *)u  {
+-(void) jogar:(Usuario *)u  {
     Fila *f = [[Fila alloc] init];
     BOOL acerto = YES;
     
@@ -96,24 +96,39 @@
         [f inserirArrayPergunta];
         [f exibir];
         NSLog(@"\nDigite a sequência apresentada, um número por vez (aperte enter após escrever um número):");
-        int a;
+        NSInteger a = 0;
         for (int i=0; i<[f.arrayPergunta count]; i++) {
-            scanf("%d",&a);
-            [f inserirArrayResposta:(NSInteger)a];
+            do{
+                scanf("%ld",&a);
+            }while (a!=1 && a!=2 && a!=3 && a!=4);
+            NSNumber *teste;
+            teste = (NSNumber*)[f.arrayPergunta objectAtIndex:(NSInteger)i];
+            if ([teste isEqual:[NSNumber numberWithInteger:a]]) {
+                [f inserirArrayResposta:(NSInteger)a];
+            }else{
+                NSLog(@"Você errou a sequência! :(\nSua pontuaçāo foi salva.\n\n\n\n");
+                if (u.pontuacao <= [f.arrayPergunta count] - 1) {
+                    u.pontuacao = [f.arrayPergunta count] - 1;
+                }
+                u.vezes = u.vezes+1;
+                [self iniciar];
+
+            }
+            
         }
-        acerto = [f compararArrays];
-        if (acerto) {
+//        acerto = [f compararArrays];
+//        if (acerto) {
             NSLog(@"Sequência correta!\n\n\n\n\n");
             sleep(1);
             [f.arrayResposta removeAllObjects];
-        }
+//        }
     }
-    NSLog(@"Você errou a sequência! :(\nSua pontuaçāo foi salva.\n\n\n\n");
-    if (u.pontuacao <= [f.arrayResposta count] - 1) {
-        u.pontuacao = [f.arrayResposta count] - 1;
-    }
-    u.vezes = u.vezes+1;
-    [self iniciar];
+//    NSLog(@"Você errou a sequência! :(\nSua pontuaçāo foi salva.\n\n\n\n");
+//    if (u.pontuacao <= [f.arrayResposta count] - 1) {
+//        u.pontuacao = [f.arrayResposta count] - 1;
+//    }
+//    u.vezes = u.vezes+1;
+//    [self iniciar];
 }
 
 @end
