@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Kaique Damato. All rights reserved.
 //
 
-#import "Username.h"
+#import "Usuario.h"
 
 
-@implementation Username
+@implementation Usuario
 
 -(instancetype)initWithNome:(NSString *)nome {
     

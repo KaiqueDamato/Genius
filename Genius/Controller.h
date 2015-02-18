@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Placar.h"
-#import "Username.h"
+#import "Usuario.h"
 #import "Fila.h"
 
 @interface Controller : NSObject
