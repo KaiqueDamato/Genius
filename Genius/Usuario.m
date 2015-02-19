@@ -25,12 +25,7 @@
 
 - (NSString *)description {
     NSString *mydescription;
-    return mydescription = [NSString stringWithFormat:@"\n Jogador: %@ \n Pontuacao Máxima: %lu \n Numero de vezes que jogou: %lu \n------------------------------",_nome, _pontuacao, _vezes];
-}
-
-- (NSString *)description2 {
-    NSString *mydescription;
-    return mydescription = [NSString stringWithFormat:@"Nome: %@",_nome];
+    return mydescription = [NSString stringWithFormat:@"\n Jogador: %@ \n Melhor Pontuação: %lu \n Numero de vezes que jogou: %lu \n------------------------------",_nome, _pontuacao, _vezes];
 }
 
 @end

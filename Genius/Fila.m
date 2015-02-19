@@ -40,21 +40,6 @@
     
 }
 
--(BOOL)compararArrays{
-    
-    if ([_arrayPergunta isEqual:_arrayResposta])
-        return YES;
-    else
-        return NO;
-}
-
--(void)limparArrays {
-    
-    [_arrayPergunta removeAllObjects];
-    [_arrayResposta removeAllObjects];
-    
-}
-
 -(void)exibir {
     for (NSUInteger i = 0; i < [_arrayPergunta count];i++) {
         [self clearLogs];
