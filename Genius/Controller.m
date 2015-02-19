@@ -125,7 +125,6 @@
                 u.vezes = u.vezes+1;
                 acerto = NO;
                 [self iniciar];
-                break;
             }
         }
         
