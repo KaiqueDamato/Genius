@@ -123,12 +123,17 @@
                     u.pontuacao = [f.arrayPergunta count] - 1;
                 }
                 u.vezes = u.vezes+1;
+                acerto = NO;
                 [self iniciar];
+                break;
             }
         }
-        NSLog(@"Sequência correta!\n\n\n\n\n");
-        sleep(1);
-        [f.arrayResposta removeAllObjects];
+        
+        if (acerto) {
+            NSLog(@"Sequência correta!\n\n\n\n\n");
+            sleep(1);
+            [f.arrayResposta removeAllObjects];
+        }
     }
 }
 
